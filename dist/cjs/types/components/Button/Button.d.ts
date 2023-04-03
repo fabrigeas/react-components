@@ -6,5 +6,5 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     outlined?: boolean;
 }
 export declare const testId = "Button";
-declare const Button: ({ type, className, buttonType, outlined, ...rest }: ButtonProps) => JSX.Element;
+declare const Button: ({ className, buttonType, outlined, ...rest }: ButtonProps) => JSX.Element;
 export default Button;
