@@ -84,7 +84,6 @@
     "sass": "^1.60.0",
     "webpack": "^5.77.0"
   },
-  "type": "module",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/cjs/types",

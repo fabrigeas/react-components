@@ -1,22 +1,21 @@
-import { terser } from 'rollup-plugin-terser';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import packageJson from './package.json' assert { type: 'json' };
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
-import sass from 'rollup-plugin-sass';
+const terser = require('rollup-plugin-terser');
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const typescript = require('@rollup/plugin-typescript');
+const sass = require('rollup-plugin-sass');
 
-export default [
+module.exports = [
   {
     input: 'src/index.ts',
     output: [
       {
-        file: packageJson.main,
+        file: 'dist/cjs/index.js',
         format: 'cjs',
         sourcemap: true,
       },
       {
-        file: packageJson.module,
+        file: 'dist/esm/index.js',
         format: 'esm',
         sourcemap: true,
       },
@@ -26,7 +25,7 @@ export default [
       nodeResolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
-      terser(),
+      terser,
       sass({ insert: true }),
     ],
   },
