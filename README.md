@@ -22,6 +22,8 @@ npm run storybook
 ## Usage
 ### 1. Button
 ```tsx
+import { Button } from '@fabrigeas/react-components';
+
 // params:
 // all react button params plus the following:
 // outlined: boolean
@@ -35,6 +37,8 @@ npm run storybook
 
 ### 2. Input
 ```jsx
+import { Input } from '@fabrigeas/react-components';
+
 // params:
 // all react input params plus the following
 // isValid?: booleam 
@@ -46,6 +50,8 @@ npm run storybook
 
 ### 3. Icon
 ```jsx
+import { Icon } from '@fabrigeas/react-components';
+
 // params:
 // all span params plus 
 // icon: 'trash' | 'sort' | 'list' | 'home' | 'next'
