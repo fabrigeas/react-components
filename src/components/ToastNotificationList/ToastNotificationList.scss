@@ -1,0 +1,10 @@
+@import '../../global.scss';
+
+.toast-notification-list {
+  .notification-list {
+    position: relative;
+    & > * {
+      margin-bottom: $small;
+    }
+  }
+}
