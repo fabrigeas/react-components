@@ -9,6 +9,10 @@
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -21,6 +25,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src/"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+  ],
 }

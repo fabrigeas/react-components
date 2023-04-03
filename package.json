@@ -1,26 +1,27 @@
 {
-  "name": "react-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@fabrigeas/react-components",
+  "version": "1.0.1",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.23",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "peerDependencies": {
     "@types/react": "^18.0.32",
     "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "sass": "^1.60.0",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "pretty": "prettier --write src",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -55,6 +56,9 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
@@ -65,9 +69,44 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.1.0",
+    "@types/react": "^18.0.32",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prettier": "^2.8.7",
     "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sass": "^1.12.19",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.60.0",
     "webpack": "^5.77.0"
-  }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/types",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Contains some useful react components like Button, Input",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fabrigeas/react-components.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Fabrice Feugang Kemegni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabrigeas/react-components/issues"
+  },
+  "homepage": "https://github.com/fabrigeas/react-components#readme"
 }
