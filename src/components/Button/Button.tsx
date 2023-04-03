@@ -10,7 +10,6 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export const testId = 'Button';
 
 const Button = ({
-  type = 'button',
   className,
   buttonType = 'info',
   outlined,
@@ -19,7 +18,6 @@ const Button = ({
   return (
     <button
       data-testid={testId}
-      type={type}
       className={`Button ${buttonType} ${outlined ? 'outlined' : ''} ${className ?? ''}`}
       {...rest}
     ></button>
