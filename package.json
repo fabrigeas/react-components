@@ -101,7 +101,13 @@
   },
   "keywords": [
     "react",
-    "typescript"
+    "typescript",
+    "typescript",
+    "jest",
+    "reactjs",
+    "scss",
+    "storybook",
+    "rollupjs"
   ],
   "author": "Fabrice Feugang Kemegni",
   "license": "ISC",
