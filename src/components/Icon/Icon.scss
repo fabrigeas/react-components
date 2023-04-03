@@ -1,0 +1,22 @@
+@import '../../global.scss';
+
+.Icon {
+	&.success {
+		color: transparent;
+		text-shadow: 0 0 0
+			$success;
+	}
+	&.warning {
+		color: transparent;
+		text-shadow: 0 0 0
+			$warning;
+	}
+	&.error {
+		color: transparent;
+		text-shadow: 0 0 0 $error;
+	}
+	&.info {
+		color: transparent;
+		text-shadow: 0 0 0 $info;
+	}
+}
