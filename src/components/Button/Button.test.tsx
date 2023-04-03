@@ -2,7 +2,7 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import ReactDOM from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
-import Button, {testId} from './Button';
+import Button, { testId } from './Button';
 import { ComponentType } from '../../types';
 
 let container: HTMLDivElement;

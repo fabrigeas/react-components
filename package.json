@@ -18,6 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "pretty": "prettier --write src",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -65,6 +66,7 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.1.0",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "prettier": "^2.8.7",
     "prop-types": "^15.8.1",
     "webpack": "^5.77.0"
   }

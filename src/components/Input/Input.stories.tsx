@@ -19,7 +19,7 @@ export default {
 const Template: ComponentStory<typeof Input> = args => <Input {...args}></Input>;
 const createStory = (args?: InputProps) => {
   const story = Template.bind({});
-  
+
   story.args = args;
 
   return story;

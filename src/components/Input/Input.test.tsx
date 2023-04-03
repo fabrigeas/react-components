@@ -29,26 +29,24 @@ it('renders', () => {
 
 it('renders textarea', () => {
   act(() => {
-    ReactDOM.createRoot(container).render(<Input textarea/>);
+    ReactDOM.createRoot(container).render(<Input textarea />);
   });
 
-
-  expect(screen.getByTestId(testId).querySelector('textarea')).toBeTruthy()
+  expect(screen.getByTestId(testId).querySelector('textarea')).toBeTruthy();
 });
 
 test.each([
   ['lorem', true],
   ['ipsum', true],
-])('renders label (%i, %i)', (label, expected) => {
+])('renders label (%i, %i)', (label) => {
   act(() => {
     ReactDOM.createRoot(container).render(<Input label={label} />);
   });
 
-  if(label) {
+  if (label) {
     expect(screen.getByTestId(testId)).toHaveTextContent(label);
   }
 });
-
 
 describe.each([true, false])('has class is-valid', isValid => {
   test(`isValid: ${isValid}`, () => {
@@ -57,7 +55,7 @@ describe.each([true, false])('has class is-valid', isValid => {
     });
 
     expect(screen.getByTestId(testId)).toHaveClass(
-      `${isValid ? 'is-valid' : 'is-invalid'}`
+      `${isValid ? 'is-valid' : 'is-invalid'}`,
     );
   });
 });
