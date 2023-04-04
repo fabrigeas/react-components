@@ -25,8 +25,8 @@ const Input = ({
   const id = Math.random().toString(16).slice(2);
   const validate = isValid !== undefined;
   const validClass = isValid ? 'is-valid' : 'is-invalid';
-
   const classList = `form-control ${className ?? ''} ${validate && validClass}`;
+
   return (
     <div data-testid={testId} className={`Input ${validClass} ${props.type ?? 'text'}`}>
       {label && (
