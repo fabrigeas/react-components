@@ -56,7 +56,7 @@ import { Icon } from '@fabrigeas/react-components';
 // all span params plus 
 // icon: 'trash' | 'sort' | 'list' | 'home' | 'next'
 <Icon icon='trash' />
-<Icon icon='home' style={{}}/>
+<Icon icon='home'/>
 ```
 
 ### 4. IconButton
