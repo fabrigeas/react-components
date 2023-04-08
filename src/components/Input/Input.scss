@@ -43,7 +43,7 @@
 			);
 	}
 
-	label {
+	.Input label {
 		margin-bottom: -0.4rem;
 		background: white;
 		z-index: 2;
@@ -94,7 +94,7 @@ input.form-control {
 .feedback {
 	width: 100%;
 	font-size: 80%;
-	margin-top: -0.5rem;
+	margin-top: -0.25rem;
 }
 .valid-feedback {
 	color: #28a745;

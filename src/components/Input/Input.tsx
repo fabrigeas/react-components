@@ -44,7 +44,7 @@ const Input = ({
       ) : (
         <input id={id} className={classList} {...props} />
       )}
-      <div data-testid="feedback" className={`${isValid ? 'valid' : 'invalid'}-feedback`}>
+      <div data-testid="feedback" className={`feedback ${isValid ? 'valid' : 'invalid'}-feedback`}>
         {isValid ? validFeedback : invalidFeedback}
       </div>
     </div>
