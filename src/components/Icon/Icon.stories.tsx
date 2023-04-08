@@ -26,3 +26,4 @@ export const Sort = createStory('sort');
 export const Trash = createStory('trash');
 export const Home = createStory('home');
 export const Next = createStory('next');
+export const Edit = createStory('edit');

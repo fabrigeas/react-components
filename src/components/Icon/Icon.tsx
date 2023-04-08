@@ -2,7 +2,7 @@ import React from 'react';
 import './Icon.scss';
 import { ComponentType } from '../../types';
 
-export type IconType = 'trash' | 'sort' | 'list' | 'home' | 'next';
+export type IconType = 'trash' | 'sort' | 'list' | 'home' | 'next' | 'edit';
 export interface IconProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   iconType?: ComponentType;
   icon: IconType;
@@ -15,6 +15,7 @@ const Icon = ({ iconType, icon, ...rest }: IconProps) => {
     trash: <span>&#x1F5D1;</span>,
     home: <span>&#127968;</span>,
     next: <span>&#62;</span>,
+    edit: <span>&#x270E;</span>,
   };
 
   return (
