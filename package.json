@@ -24,7 +24,6 @@
     "build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepublish": "npm run build && npm version patch",
     "publish": "npm publish --access public",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
