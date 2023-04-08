@@ -7,3 +7,4 @@ export declare const Sort: ComponentStory<({ iconType, icon, ...rest }: import("
 export declare const Trash: ComponentStory<({ iconType, icon, ...rest }: import("./Icon").IconProps) => JSX.Element>;
 export declare const Home: ComponentStory<({ iconType, icon, ...rest }: import("./Icon").IconProps) => JSX.Element>;
 export declare const Next: ComponentStory<({ iconType, icon, ...rest }: import("./Icon").IconProps) => JSX.Element>;
+export declare const Edit: ComponentStory<({ iconType, icon, ...rest }: import("./Icon").IconProps) => JSX.Element>;
