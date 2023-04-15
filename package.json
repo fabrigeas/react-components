@@ -75,6 +75,8 @@
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.26",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "grunt": "^1.6.1",
+    "grunt-shell": "^4.0.0",
     "prettier": "^2.8.7",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
