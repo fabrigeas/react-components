@@ -18,7 +18,10 @@ module.exports = grunt => {
           'npm run build',
           'git add dist',
           'git commit -m "update components build"',
-        ].join('&'),
+        ].join(';'),
+        callback({}, {}, {}, callback) {
+          callback();
+        },
       },
       bumpVersion: {
         command: v => `npm version --allow-same-version ${v} -m "version bump %s"`,
