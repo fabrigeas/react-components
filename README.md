@@ -21,6 +21,10 @@ npm run storybook
 
 ## Usage
 ### 1. Button
+```bash
+npm i @fabrigeas/react-components
+```
+
 ```tsx
 import { Button } from '@fabrigeas/react-components';
 
