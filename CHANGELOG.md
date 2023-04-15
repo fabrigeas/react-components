@@ -1,3 +1,9 @@
+2.0.4
+version bump 2.0.3
+update components build
+feat(Spinner): reduce height to 50%
+build(grunt): update build task
+docs(README): add missing install instruction
 2.0.2
 build components
 docs(README): update deployment usage
