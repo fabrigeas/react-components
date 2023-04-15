@@ -1,22 +1,28 @@
 import React from 'react';
 import './Spinner.scss';
 
-const Spinner = () => {
-  return (
+const Spinner = (): JSX.Element => (
+  <div
+    className="Spinner"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100%',
+      width: '100%',
+    }}
+  >
     <div
-      className="spinner"
+      className="spin"
       style={{
-        border: '16px solid #f3f3f3',
+        animation: '1.5s linear infinite spin',
+        border: 'solid 0.25rem #cfd0d1',
+        borderBottomColor: '#1c87c9',
         borderRadius: '50%',
-        borderTop: '16px solid black',
-        width: '8rem',
-        height: '8rem',
-        margin: 'auto',
-        WebkitAnimation: 'spin 2s linear infinite',
-        animation: 'spin 2s linear infinite',
+        height: '100%',
+        aspectRatio: '1/1',
       }}
     ></div>
-  );
-};
-
+  </div>
+);
 export default Spinner;
