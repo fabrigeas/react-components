@@ -85,20 +85,22 @@ var Input = function (_a) {
     return (jsxs("div", __assign({ "data-testid": testId$2, className: "Input ".concat(validClass, " ").concat((_b = props.type) !== null && _b !== void 0 ? _b : 'text') }, { children: [label && (jsx("label", __assign({ className: "form-label", htmlFor: id }, { children: label }))), textarea ? (jsx("textarea", __assign({ id: id, className: classList }, props, { style: { height: 'unset !important' } }))) : (jsx("input", __assign({ id: id, className: classList }, props))), jsx("div", __assign({ "data-testid": "feedback", className: "feedback ".concat(isValid ? 'valid' : 'invalid', "-feedback") }, { children: isValid ? validFeedback : invalidFeedback }))] })));
 };
 
-___$insertStyle("@-webkit-keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n  }\n}\n@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}");
+___$insertStyle("@keyframes spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}");
 
-var Spinner = function () {
-    return (jsx("div", { className: "spinner", style: {
-            border: '16px solid #f3f3f3',
+var Spinner = function () { return (jsx("div", __assign({ className: "Spinner", style: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%',
+        width: '100%',
+    } }, { children: jsx("div", { className: "spin", style: {
+            animation: '1.5s linear infinite spin',
+            border: 'solid 0.25rem #cfd0d1',
+            borderBottomColor: '#1c87c9',
             borderRadius: '50%',
-            borderTop: '16px solid black',
-            width: '8rem',
-            height: '8rem',
-            margin: 'auto',
-            WebkitAnimation: 'spin 2s linear infinite',
-            animation: 'spin 2s linear infinite',
-        } }));
-};
+            height: '100%',
+            aspectRatio: '1/1',
+        } }) }))); };
 
 ___$insertStyle(".toast-notification {\n  margin-bottom: 1rem;\n}\n.toast-notification.info {\n  border-color: #2546f0;\n  background-color: #2546f0;\n}\n.toast-notification.success {\n  border-color: #00bf7d;\n  background-color: #00bf7d;\n}\n.toast-notification.warning {\n  border-color: #f9d7a2;\n  background-color: #f9d7a2;\n}\n.toast-notification.error {\n  border-color: #d4370c;\n  background-color: #d4370c;\n}\n.toast-notification .header {\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-align: center;\n  align-items: center;\n  padding: 0.25rem 0.75rem;\n  background-color: rgba(255, 255, 255, 0.85);\n  background-clip: padding-box;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.05);\n}\n.toast-notification .header > * {\n  margin-right: 0.2rem;\n}\n.toast-notification .header .title {\n  flex: 1;\n}\n.toast-notification .content {\n  padding: 0.75rem;\n}\n.toast-notification .footer > div {\n  padding: 2px;\n  background: white;\n}\n.toast-notification button {\n  cursor: pointer !important;\n}\n@keyframes increaseWidth {\n  from {\n    width: 0;\n  }\n  to {\n    width: 100%;\n  }\n}\n.toast-notification .progressBar {\n  animation-name: increaseWidth;\n  animation-duration: 5s;\n}");
 
