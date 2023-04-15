@@ -19,8 +19,11 @@ module.exports = grunt => {
           'git add dist',
           'git commit -m "update components build"',
         ].join(';'),
-        callback({}, {}, {}, callback) {
-          callback();
+        options: {
+          stdout: false,
+          callback({}, {}, {}, callback) {
+            callback();
+          },
         },
       },
       bumpVersion: {
@@ -35,7 +38,15 @@ module.exports = grunt => {
           },
         },
       },
-      publishNpm: 'npm publish',
+      publishNpm: {
+        command: ['npm publish'],
+        options: {
+          stdout: false,
+          callback({}, {}, {}, callback) {
+            callback();
+          },
+        },
+      },
       gitPush: {
         command: ['git push', 'git push --tags'].join(';'),
       },
