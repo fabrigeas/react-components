@@ -39,7 +39,7 @@ module.exports = grunt => {
         },
       },
       publishNpm: {
-        command: ['npm publish'],
+        command: 'npm publish',
         options: {
           stdout: false,
           callback({}, {}, {}, callback) {
