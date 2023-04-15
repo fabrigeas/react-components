@@ -1,3 +1,7 @@
+version bump 2.0.6
+version bump 2.0.5
+build(grunt): proceed with warnings
+build(grunt): update git push
 2.0.4
 version bump 2.0.3
 update components build
