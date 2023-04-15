@@ -36,7 +36,9 @@ module.exports = grunt => {
         },
       },
       publishNpm: 'npm publish',
-      pushFollowTags: 'git push --follow-tags',
+      gitPush: {
+        command: ['git push', 'git push --tags'].join(';'),
+      },
       updateChangelog: {
         command: [
           "git log --oneline | sed 's/^[a-zA-Z0-9]* //g' > CHANGELOG.md",
@@ -86,7 +88,7 @@ module.exports = grunt => {
     task.run(`shell:bumpVersion:${version}`);
     task.run('shell:publishNpm');
     task.run('shell:updateChangelog');
-    task.run('shell:pushFollowTags');
+    task.run('shell:gitPush');
   });
 
   grunt.registerTask('shell:default', ['npm version']);
