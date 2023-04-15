@@ -19,7 +19,7 @@ const Spinner = (): JSX.Element => (
         border: 'solid 0.25rem #cfd0d1',
         borderBottomColor: '#1c87c9',
         borderRadius: '50%',
-        height: '100%',
+        height: '50%',
         aspectRatio: '1/1',
       }}
     ></div>
