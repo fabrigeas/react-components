@@ -11,7 +11,7 @@ export const testId = 'Button';
 
 const Button = ({
   className,
-  buttonType = 'info',
+  buttonType = 'default',
   outlined,
   ...rest
 }: ButtonProps): JSX.Element => {

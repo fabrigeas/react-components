@@ -8,6 +8,9 @@ export default {
   argTypes: {
     outlined: { controls: [true, false] },
   },
+  args: {
+    outlined: false,
+  },
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = args => <Button {...args}>Hello</Button>;
@@ -24,6 +27,7 @@ const createStory = ({ outlined, buttonType }: ButtonProps) => {
 };
 
 export const Outlined = createStory({ outlined: true });
+export const Default = createStory({ buttonType: 'default' });
 export const Success = createStory({ buttonType: 'success' });
 export const Info = createStory({ buttonType: 'info' });
 export const Warning = createStory({ buttonType: 'warning' });
