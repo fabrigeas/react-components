@@ -1,3 +1,4 @@
+version bump 2.0.7
 update components build
 feat(Button): add default type
 version bump 2.0.6
