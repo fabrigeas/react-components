@@ -1,4 +1,4 @@
-export type ComponentType = 'info' | 'success' | 'error' | 'warning';
+export type ComponentType = 'default' | 'info' | 'success' | 'error' | 'warning';
 export interface ToastContent {
     content: string;
     title?: string;
